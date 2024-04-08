@@ -56,7 +56,7 @@ class TypeSpeedGUI:
         while self.started:
             time.sleep(0.1)
             self.counter += 0.1
-            wps = len(self.input_entry.get() / self.counter)
+            wps = len(self.input_entry.get().split(" ")) / self.counter
             wpm = wps * 60
             self.speed_label.config(text= f"Speed: \n{wps:.2f} CPS\n{wpm:.2f} CPM")
 
