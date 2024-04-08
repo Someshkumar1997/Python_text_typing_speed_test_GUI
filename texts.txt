@@ -1,0 +1,3 @@
+This is a sample sentence for testing.
+You can add more sentences, in the next line.
+And save it in .txt format.
