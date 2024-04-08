@@ -19,7 +19,7 @@ class TypeSpeedGUI:
 
         self.input_entry = tk.Entry(self.frame, width=40, font= ("Your choice", 24))
         self.input_entry.grid(row= 1, column= 0, columnspan= 2, padx= 5, pady= 10)
-        self.input_entry.bind("<KeyDown>", self.start)
+        self.input_entry.bind("<KeyPress>", self.start)
 
         self.speed_label = tk.Label(self.frame, text= "Speed: \n0.00 WPS\n0.00 WPM", font= ("Your choice", 18))
         self.speed_label.grid(row= 2, column= 0, columnspan= 2, padx= 5, pady= 10)
