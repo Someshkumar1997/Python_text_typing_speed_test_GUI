@@ -41,7 +41,7 @@ class TypeSpeedGUI:
                 t = threading.Thread(target= self.time_thread)
                 t.start()
 
-        if not self.sample_label.cget('text') == self.input_entry.get():
+        if not self.sample_label.cget('text').startswith(self.input_entry.get()):
             self.input_entry.config(fg= "red")
         else:
             self.input_entry.config(fg= "black")
